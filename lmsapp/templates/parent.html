@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMBU-Library Management System</title>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet"/>
+    <script src="{% static 'js/bootstrap.bundle.js'%}"></script>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+span
+{
+  font-size:20px;
+}
+a{
+  text-decoration:none;
+}
+i
+{
+  margin-right:5px;
+}
+
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row bg-secondary m-1 text-light">
+           <div class="col-sm-4" style="text-align:center;">contact No:-8433185706</div>
+           <div class="col-sm-4" style="text-align: center;">email:-madhu@gmail.com</div>
+           <div class="col-sm-4" style="text-align: center;">follow us</div>
+        </div>
+        <!--header start-->
+        <div class="row  m-1" style="background-color:rgb(248, 14, 65);" >
+          <div class="col-sm-2" style="max-height:80;">
+           <img src="{%  static 'images/p9.png' %}"  alt="" id="logo" srcset="" style="height:100px; margin-top:15px;"/>&nbsp;
+          </div>
+          <div class="col-sm-7 "><h1 class="" style=" font-family:algerian">Tilka Manghi Bhagalpur University</h1>
+            <p style="font-size:20px; margin-left:18%;">NAAC Accredited 'B' grade with CGPA 2.5</p>
+          </div>
+            <div class="col-sm-2 d-flex mt-5 ms-4">
+            <img src="https://cdn-icons-png.flaticon.com/128/2626/2626269.png" data-src="https://cdn-icons-png.flaticon.com/128/2626/2626269.png" alt="Facebook " title="Facebook " width="40" height="40" class="lzy lazyload--done" srcset="https://cdn-icons-png.flaticon.com/128/2626/2626269.png 4x">
+            <a href="https://www.flaticon.com/free-icon/instagram_1177585" class="view link-icon-detail" title="Instagram" data-id="1177585" data-src="?term=instagram+logo&amp;page=1&amp;position=61&amp;origin=search">
+            <img src="https://cdn-icons-png.flaticon.com/128/1177/1177585.png" data-src="https://cdn-icons-png.flaticon.com/128/1177/1177585.png" alt="Instagram " title="Instagram " width="40" height="40" class="lzy lazyload--done" srcset="https://cdn-icons-png.flaticon.com/128/1177/1177585.png 4x">
+          </a>
+          <img src="https://cdn-icons-png.flaticon.com/128/2168/2168336.png" data-src="https://cdn-icons-png.flaticon.com/128/2168/2168336.png" alt="Twitter " title="Twitter " width="40" height="40" class="lzy lazyload--done" srcset="https://cdn-icons-png.flaticon.com/128/2168/2168336.png 4x">
+          <img src="https://cdn-icons-png.flaticon.com/128/2626/2626281.png" data-src="https://cdn-icons-png.flaticon.com/128/2626/2626281.png" alt="Telegram " title="Telegram " width="40" height="40" class="lzy lazyload--done" srcset="https://cdn-icons-png.flaticon.com/128/2626/2626281.png 4x">
+          <a href="https://www.flaticon.com/free-icon/youtube_4401475" class="view link-icon-detail" title="Youtube" data-id="4401475" data-src="?term=youtube+logo&amp;page=1&amp;position=47&amp;origin=search">
+            <img src="https://cdn-icons-png.flaticon.com/128/4401/4401475.png" data-src="https://cdn-icons-png.flaticon.com/128/4401/4401475.png" alt="Youtube " title="Youtube " width="40" height="40" class="lzy lazyload--done" srcset="https://cdn-icons-png.flaticon.com/128/4401/4401475.png 4x">
+          </a>
+        </div>
+          </div>
+
+        <!--header END-->
+        
+        <nav class="navbar navbar-expand-lg m-1" style="background-color: rgb(80, 87, 87);">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Library Management System</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'lmsapp:index' %}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'lmsapp:aboutus' %}">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'lmsapp:registration' %}">Registration</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'lmsapp:login' %}">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'lmsapp:contactus' %}">Contact Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+          <div class="row mt-2">
+            
+            
+                {% block main %}
+
+                {% endblock main %}
+          </div>
+          
+          <div class="row mt-2 pt-2 bg-dark">
+            <div class="col-sm-4" style="background-color:#010202; color:white; min-height: 250px; ">
+              <img src="{% static 'images/aa.png' %}" style="height: 100px; width:100px; border-radius: 100%; margin-left:80px; margin-top: 15px;; "/>
+            <h3 style="color:white; margin-left:50px; margin-top:20px;">Contact Us</h3>
+          
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="Color:black" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+              </svg>
+              <a href="#" class="b text-white"><span>Tilka Manjhi Bhagalpur University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bhagalpur,Bihar,PIN-812007</span></a><br>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="Color:black" class="bi bi-chat-square-dots-fill" viewBox="0 0 16 16">
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+              </svg>
+              <a href="#" class="b text-white"><span style="font-size:15px;">registrar@tmbuniv.ac.in</span></a><br>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="Color:black" class="bi bi-chat-square-dots-fill" viewBox="0 0 16 16">
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+              </svg>
+              <a href="#" class="b text-white"><span style="font-size:15px;">registrartmbu07@gmail.com</span></a>
+            </div>
+            <div class="col-sm-4" style="background-color:#050a09; color:white;min-height: 250px;">
+              <h3 style ="color:white; margin-left:50px; margin-top: 20px;">Important Links</h3>
+              <ul type="none">
+                <li><i class="fa-regular fa-circle-check text-danger me-3"></i></i><a href="#" class="b text-white">National Academic Depository (NAD)</a></li>
+                <li><i class="fa-regular fa-circle-check text-danger me-3"></i><a href="#" class="b text-align text-white">SWAYAM Portal</a></li>
+                <li><i class="fa-regular fa-circle-check text-danger me-3"></i><a href="#" class="b text-align text-white">e-PG Pathshala</a></li>
+                <li><i class="fa-regular fa-circle-check text-danger me-3"></i><a href="#" class="b text-align text-white">Spoken Tutorial</a></li>
+                <li><i class="fa-regular fa-circle-check text-danger me-3"></i><a href="#" class="b text-align text-white">Ministry of Human Resource Development &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MHRD)</a></li>
+                <li><i class="fa-regular fa-circle-check text-danger me-3"></i><a href="#" class="b text-align text-white">University Grants Commission (UGC)</a></li>
+                <li><i class="fa-regular fa-circle-check text-danger me-3"></i><a href="#" class="b text-align text-white">Government of Bihar</a></li>
+                <li><i class="fa-regular fa-circle-check text-danger me-3"></i><a href="#" class="b text-align text-white">Government of India Web Directory</a></li>
+                <li><i class="fa-regular fa-circle-check text-danger me-3"></i><a href="#" class="b text-align text-white">National Scholarship Portal</a></li>
+                <li><i class="fa-regular fa-circle-check text-danger me-3"></i><a href="#" class="b text-align text-white">All India Council for Technical Education &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(AICTE)</a></li>
+                <li><i class="fa-regular fa-circle-check text-danger me-3"></i><a href="#" class="b text-align text-white">National Knowledge Network (NKN)</a></li>
+                <li><i class="fa-regular fa-circle-check text-danger me-3"></i><a href="#" class="b text-align text-white">All India Survey on Higher Education &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(AISHE)</a></li>
+                <li><i class="fa-regular fa-circle-check text-danger me-3"></i><a href="#" class="b text-align text-white">National Council For Teacher Education &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NCTE)</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4" style="background-color:#040808; color:white; min-height: 250px;">
+              <h3 style="color:white; margin-left:50px; margin-top: 20px;"> Search For Posts </h3>  
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Enter your search... " style="background-color: white;" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="Color:black" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                </button>
+              </form>
+              <div class="col-sm-10" style="margin-top: 20px; margin-left: 50px;">
+              <img src="https://cdn-icons-png.flaticon.com/128/2626/2626269.png" data-src="https://cdn-icons-png.flaticon.com/128/2626/2626269.png" alt="Facebook " title="Facebook " width="40" height="40" class="lzy lazyload--done" srcset="https://cdn-icons-png.flaticon.com/128/2626/2626269.png 4x"><a href="https://www.flaticon.com/free-icon/instagram_1177585" class="view link-icon-detail" title="Instagram" data-id="1177585" data-src="?term=instagram+logo&amp;page=1&amp;position=61&amp;origin=search">
+                <img src="https://cdn-icons-png.flaticon.com/128/1177/1177585.png" data-src="https://cdn-icons-png.flaticon.com/128/1177/1177585.png" alt="Instagram " title="Instagram " width="40" height="40" class="lzy lazyload--done" srcset="https://cdn-icons-png.flaticon.com/128/1177/1177585.png 4x">
+              </a><img src="https://cdn-icons-png.flaticon.com/128/2168/2168336.png" data-src="https://cdn-icons-png.flaticon.com/128/2168/2168336.png" alt="Twitter " title="Twitter " width="40" height="40" class="lzy lazyload--done" srcset="https://cdn-icons-png.flaticon.com/128/2168/2168336.png 4x"><img src="https://cdn-icons-png.flaticon.com/128/2626/2626281.png" data-src="https://cdn-icons-png.flaticon.com/128/2626/2626281.png" alt="Telegram " title="Telegram " width="40" height="40" class="lzy lazyload--done" srcset="https://cdn-icons-png.flaticon.com/128/2626/2626281.png 4x"><a href="https://www.flaticon.com/free-icon/youtube_4401475" class="view link-icon-detail" title="Youtube" data-id="4401475" data-src="?term=youtube+logo&amp;page=1&amp;position=47&amp;origin=search">
+                <img src="https://cdn-icons-png.flaticon.com/128/4401/4401475.png" data-src="https://cdn-icons-png.flaticon.com/128/4401/4401475.png" alt="Youtube " title="Youtube " width="40" height="40" class="lzy lazyload--done" srcset="https://cdn-icons-png.flaticon.com/128/4401/4401475.png 4x"></a>
+                </div>
+            </div>
+          </div>
+          <div class="row bg-success text-white pt-3 text-center">
+        <h6>Copyright@ 1960-2023 Tilka Manjhi Bhagalpur University .All Rights Reserved.</h6></div>
+    </div>
+</body>
+</html>

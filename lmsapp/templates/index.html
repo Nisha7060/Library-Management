@@ -1,0 +1,164 @@
+{% extends "parent.html" %}
+{% block main%}
+{% load static %}
+          <!--start marquee-->
+          <div class="row m-1 bg-dark p-2 ">
+            <marquee direction="left"  style="color:white">Welcome to lms Project</marquee>
+          </div>
+          <!--end marquee-->
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="{% static 'images/s1.jpg' %}" class="d-block w-100" height="500px" width="1000px" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static 'images/s4.jpg' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static 'images/L3.jpg' %}" class="d-block w-100" alt="...">
+                </div>
+              </di>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+  
+     <!-- Management About -->
+     <section id="mang_about" class="sect_padd main_block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mang_col">
+                    <div class="main_block">
+                        <div class="row memb_row">
+                            <div class="col-md memb_block">
+                                <div class="main_block">
+                                    <a href="javascript:void(0)" style="padding:20px 120px 20px 120px ;" class="btn btn-danger ms-1 mt-4 mb-4 ">Chancellor's Message</a>
+                                    <div class="memb_img">
+                                        <div class="img_inner">
+                                          <img src="{% static 'images/p8.png' %}" alt="images" > 
+                                        </div>
+                                    </div>
+                                    <div class="memb_info ">
+                                      <div class="bg-danger text-center" style="width: 400px;">
+                                        <h3 class="memb_title bg-light ms-5 me-5">Chancellor</h3>
+                                        <span class="memb_name">Shri Rajendra Vishwanath Arlekar</span>
+                                        <a href="javascript:void(0)" class="btn btn-warning m-3">Know More</a>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md memb_block">
+                              <div class="main_block">
+                                  <a href="javascript:void(0)" style="padding:20px 100px 20px 100px ;" class="btn btn-danger  m-4">Vice Chancellor's Message</a>
+                                  <div class="memb_img ms-5">
+                                      <div class="img_inner">
+                                          <img src="http://www.tmbuniv.ac.in/wp-content/uploads/2022/08/prof_jawahar_lal.jpg" alt="image">
+                                      </div>
+                                  </div>
+                                  <div class="memb_info ">
+                                    <div class="bg-danger text-center ms-5" style="width: 350px;">
+                                      <h3 class="memb_title bg-light ms-5 me-5">Vice Chancellor</h3>
+                                      <span class="">Prof. (Dr.) Jawahar Lal</span><br>
+                                      <a href="javascript:void(0)" class="btn btn-warning m-3">Know More</a>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                          </section>
+        <!-- End Management About -->
+
+<h1 style="text-align: center;">This is home page.</h1>
+
+<!-- Posts -->
+
+<section id="posts_types" style="background-color: black;  color: white;" class="container-fluid">
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-lg-6 post_col notices_col">
+    <div class="main_block">
+    <div class="post_head sect_head">
+    <i class="fa-solid fa-bullhorn"></i>
+    <h3>Notices</h3>
+    </div>
+<div class="post_lists">
+<ul>
+<li><a href="#" class="a" style="color:white">Part-I practical Exam  </a></li> 
+<li><a href="#" class="a" style="color:white">Fees and Form Submission date of part-2 and part-3  </a></li> 
+<li><a href="#" class="a" style="color:white">Part-3 Exam-2023 (2020-23)  </a></li> 
+<li><a href="#" class="a" style="color:white">Part-2 Exam-2023 (2021-24)  </a></li> 
+<li><a href="#" class="a" style="color:white">New Exam Center for Master Sem-III (2021-23) (Math and Hindi)  </a></li> 
+<li><a href="#" class="a" style="color:white">Paper BCA-302 exam date shifted 05-09-2023 to 23-09-2023  </a></li> 
+</ul>
+<h3>View All Notices</h3>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-lg-6 post_col circulars_col">
+          <div class="main_block">
+              <div class="post_head sect_head">
+                  <i class="fa-solid fa-paste"></i>
+                  <h3 class="sect_title">Circulars</h3>
+              </div>
+<div>
+<ul>
+<li><a href="#" class="a" style="color:white">75% Attendance Mandatory  </a></li> 
+<li><a href="#" class="a" style="color:white">Senate Elected member  </a></li> 
+<li><a href="#" class="a" style="color:white">Senate elected member  </a></li> 
+<li><a href="#" class="a" style="color:white">Senate elected member  </a></li> 
+<li><a href="#" class="a" style="color:white">OMSP and IFF Exam 2023  </a></li> 
+<li><a href="#" class="a" style="color:white">Exam OMSP Sem -III (2021-2024)  </a></li> 
+</ul>
+<h3>View All Circulars</h3>
+</div>
+          </div>
+      </div>
+
+                  <div class="col-lg-6 post_col news_col">
+                  <div class="main_block">
+                  <div class="post_head sect_head">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <h3 class="sect_title">News & Events</h3>
+                  </div>
+<div class="post_lists">
+<ul>
+<li><a href="#" class="a" style="color:white">M.Ed Entrance Test on 16/07/2023  </a></li> 
+<li><a href="#" class="a" style="color:white">News Clipping 24_05_2023  </a></li> 
+<li><a href="#" class="a" style="color:white">नई बात, भागलपुर।  </a></li> 
+<li><a href="#" class="a" style="color:white">News Clipping 09_05_2023  </a></li> 
+<li><a href="#" class="a" style="color:white">TMBU 1st Edition (Book April)  </a></li> 
+<li><a href="#" class="a" style="color:white">News Clipping 27-04-2023  </a></li> 
+</ul>
+</div>
+</div>
+</div>
+
+                  <div class="col-lg-6 post_col news_col">
+                  <div class="main_block">
+                  <div class="post_head sect_head">
+                  <i class="fa-solid fa-gavel"></i>
+                  <h3 class="sect_title">Tenders</h3>
+                  </div>
+                  <div>
+<ul>
+<li><a href="#" class="a" style="color:white">Tender for Bio-Metric Machine  </a></li> 
+<li><a href="#" class="a" style="color:white">Tender for Boundary Wall in Old PG  </a></li> 
+<li><a href="#" class="a" style="color:white">Tender for construction of Boundary Wall and Building  </a></li> 
+<li><a href="#" class="a" style="color:white">Tender For Agriculture land in University Campus  </a></li> 
+<li><a href="#" class="a" style="color:white">Quotation for following Items like ID cards, Folders A4 etc  </a></li> 
+<li><a href="#" class="a" style="color:white">Quotations for Air Conditionars and Stabilizers  </a></li> 
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- End Posts -->
+{% endblock main %}
